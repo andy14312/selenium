@@ -1,0 +1,30 @@
+{
+  "name": "selenium",
+  "version": "1.0.0",
+  "description": "selenium automation training project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andy14312/selenium.git"
+  },
+  "keywords": [
+    "selenium",
+    "automation",
+    "testing",
+    "tool",
+    "training",
+    "project"
+  ],
+  "author": "anand mutyala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andy14312/selenium/issues"
+  },
+  "homepage": "https://github.com/andy14312/selenium#readme",
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}

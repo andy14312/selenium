@@ -1,0 +1,48 @@
+.header {
+	padding: 20px;
+	background-color: #273a40;
+}
+
+.header h1 {
+	color: #5E7885;
+}
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #ABAEC0;
+	padding: 20px 0;
+}
+
+.footer p {
+	color: #F2EDF1;
+	margin: 0;
+}
+
+.login-half {
+	
+	color: #273A40;
+	top: 100px;
+}
+
+.login-half legend {
+	color: #273A40;
+}
+
+.login-half .well {
+	-webkit-box-shadow: 0 0 10px #5E7885;
+	box-shadow: 0 0 10px #5E7885;
+	-moz-shadow: 0 0 10px #5E7885;
+}
+
+.login-half .forgot-pass-link {
+	margin-top: 8px;
+	text-decoration: underline;
+}
+.login-half .login-error {
+	color: #D8211D;
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 12px;
+}
