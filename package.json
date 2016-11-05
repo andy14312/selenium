@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/andy14312/selenium#readme",
   "devDependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "open": "0.0.5"
   }
 }

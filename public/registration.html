@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Selenium</title>
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/js/jquery-ui-1.11.4/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modalStyles.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <header class="header">
+        	<h1>Selenium automation project training</h1>
+        </header>
+
+        <main class="container">
+			<div class="user-detail-form-wrapper">
+<form class="form-horizontal user-detail-form">
+    <fieldset>
+        <legend>
+            Registration Form
+        </legend>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="firstname">
+                First Name
+            </label>
+            <div class="col-md-2">
+                <input class="form-control" name="firstname" id="firstname" required placeholder="First Name">
+            </div>
+            <label class="control-label col-md-2" for="lastname">
+                Last Name
+            </label>
+            <div class="col-md-2">
+                <input class="form-control" name="lastname" id="lastname" placeholder="Last Name">
+            </div>
+            <label class="control-label col-md-2" for="email">
+                E-Mail
+            </label>
+            <div class="col-md-2">
+                <input class="form-control" name="email" type="email" id="email" placeholder="E-Mail">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            
+            <label class="control-label col-md-2" for="datepicker">
+                D.O.B
+            </label>
+            <div class='col-md-2'>
+                <input type='text' class="form-control" name="datepicker" id="datepicker" placeholder="Date of Birth">
+            </div>
+
+            <label class="control-label col-md-2">
+                Gender
+            </label>
+            <div class="col-md-2">
+                <label class="radio-inline"><input type="radio" checked name="gender">Male</label>
+                <label class="radio-inline"><input type="radio" name="gender">Female</label>
+            </div>
+            <label class="control-label col-md-2">
+            </label>
+            <div class="col-md-2">
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-md-2" for="country">
+                Country
+            </label>
+            <div class="col-md-2">
+                <select class="form-control" id="country">
+                    <option disabled selected>Select country</option>
+                    <option>India</option>
+                </select>
+            </div>
+            <label class="control-label col-md-2" for="state">
+                State
+            </label>
+            <div class="col-md-2">
+                <select class="form-control" id="state">
+                    <option selected disabled>Select state</option>
+                    <option>Andhra Pradesh</option>
+                    <option>Telangana</option>
+                    <option>Karnataka</option>
+                </select>
+            </div>
+            <label class="control-label col-md-2" for="city">
+                City
+            </label>
+            <div class="col-md-2">
+                <select class="form-control" id="city">
+                    <option selected disabled>Select city</option>
+                    <option>Hyderabad</option>
+                    <option>Vishakhapatnam</option>
+                    <option>Kakinada</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-md-2">
+                Skills
+            </label>
+            <div class="col-md-10">
+                <div class="checkbox">
+                  <label class="form-check-inline"><input class="form-check-input" type="checkbox" value="">.Net</label>
+                </div>
+                <div class="checkbox">
+                  <label class="form-check-inline"><input class="form-check-input" type="checkbox" value="">JAVA</label>
+                </div>
+                <div class="checkbox">
+                  <label class="form-check-inline"><input class="form-check-input" type="checkbox" value="">Php</label>
+                </div>
+                <div class="checkbox">
+                  <label class="form-check-inline"><input class="form-check-input" type="checkbox" value="">JavaScript</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group text-center form-btn-group">
+            <button type="submit" class="btn btn-primary btn-save-profile">
+                Save
+                <a href class="js-open-modal" data-modal-id="save-profile-popup"></a>
+            </button>
+            <label class="btn btn-primary btn-cancel-profile-edit">
+                Cancel
+            </label>
+        </div>
+    </fieldset>
+</form>
+<div class="modal-box" id="save-profile-popup">
+        <header>
+            <a href="#" class="js-modal-close close">×</a>
+            <h3>Profile Saved</h3>
+        </header>
+        <div class="modal-body modal-body-profile-saved">
+        </div>
+        <footer>
+             <button class="btn btn-primary js-modal-close">Close</button>
+        </footer>
+    </div>
+</div>
+
+        </main>
+
+        <footer class="footer">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-md-10 text-center">
+                        <p class="text-center"> &copy; 2016 Selenium Training project</p>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <a class="media-icon"href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                        <a class="media-icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+        			
+
+        	</div>
+            
+        </footer>
+		
+        <script src="vendor/js/underscore-min.js"></script>
+        <script src="vendor/js/jquery-1.12.4.min.js"></script>
+        <script src="vendor/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <script src="vendor/js/backbone-min.js"></script>
+        <!-- <script src="/js/views/LoginView.js"></script> -->
+        <script src="/js/views/RegistrationView.js"></script>
+        <!-- <script src="/js/views/NavbarView.js"></script> -->
+        <!-- <script src="/js/views/HomeView.js"></script> -->
+        <!-- <script src="/js/views/LoggedOutView.js"></script> -->
+        <!-- <script src="/js/routers/router.js"></script> -->
+        <script src="js/app.js"></script>
+        <script src="vendor/js/modalPlugin.js"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Selenium</title>
+        <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+        <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendor/js/jquery-ui-1.11.4/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/modalStyles.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <header class="header">
+        	<h1>Selenium automation project training</h1>
+        </header>
+        <nav class="navbar-view">
+            <div class="container-fluid">
+                
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-home">
+                            Home
+                        </li>
+                        <li>
+                            controls
+                        </li>
+                        <li class="web-table">
+                            webtable
+                        </li>
+                        
+                    </ul>
+                    <h6 class="pull-right logout">
+                        <i class="fa fa-sign-out"></i>Logout
+                    </h6>
+            </div>
+        </nav>
+        <main class="container home-main">
+			<div class="container home-view">
+                <row>
+                    <div class="user-picture col-md-4">
+                        <div class="picture-slot">
+                            <img src="" alt="profile pic">
+                        </div>
+                        <p class="browsed-file"></p>
+                        <label class="btn btn-default btn-file">
+                            Browse <input type="file" id="profile-pic-browse" style="display:none;">
+                        </label>
+                        <button class="btn btn-primary btn-upload">
+                            <a href="" class="js-open-modal" data-modal-id="popup">Upload<i class="fa fa-upload"></i></a>
+                        </button>
+                    </div>
+                </row>
+                <div class="modal-box" id="popup">
+                    <header>
+                        <a href="#" class="js-modal-close close">×</a>
+                        <h3>File Uploaded</h3>
+                    </header>
+                    <div class="modal-body modal-body-file-upload">
+                    </div>
+                    <footer>
+                         <button class="btn btn-primary js-modal-close">Close</button>
+                    </footer>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+        	<div class="container">
+                <div class="row">
+                    <div class="col-md-10 text-center">
+                        <p class="text-center"> &copy; 2016 Selenium Training project</p>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <a class="media-icon"href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                        <a class="media-icon" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+        			
+
+        	</div>
+            
+        </footer>
+		
+        <script src="vendor/js/underscore-min.js"></script>
+        <script src="vendor/js/jquery-1.12.4.min.js"></script>
+        <script src="vendor/js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script src="vendor/js/bootstrap.min.js"></script>
+        <script src="vendor/js/backbone-min.js"></script>
+        <!-- <script src="/js/views/LoginView.js"></script> -->
+        <!-- <script src="/js/views/RegistrationView.js"></script> -->
+        <script src="/js/views/NavbarView.js"></script>
+        <script src="/js/views/HomeView.js"></script>
+        <!-- <script src="/js/views/LoggedOutView.js"></script> -->
+        <!-- <script src="/js/routers/router.js"></script> -->
+        <script src="js/app.js"></script>
+        <script src="vendor/js/modalPlugin.js"></script>
+    </body>
+</html>

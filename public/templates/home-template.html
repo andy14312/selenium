@@ -1,0 +1,27 @@
+<div class="container home-view">
+	<row>
+		<div class="user-picture col-md-4">
+			<div class="picture-slot">
+				<img src="" alt="profile pic">
+			</div>
+			<p class="browsed-file"></p>
+			<label class="btn btn-default btn-file">
+				Browse <input type="file" id="profile-pic-browse" style="display:none;">
+			</label>
+			<button class="btn btn-primary btn-upload">
+				<a href="" class="js-open-modal" data-modal-id="popup">Upload<i class="fa fa-upload"></i></a>
+			</button>
+		</div>
+	</row>
+	<div class="modal-box" id="popup">
+	<header>
+        <a href="#" class="js-modal-close close">×</a>
+        <h3>File Uploaded</h3>
+  	</header>
+  	<div class="modal-body modal-body-file-upload">
+  	</div>
+  	<footer>
+         <button class="btn btn-primary js-modal-close">Close</button>
+	</footer>
+	</div>
+</div>

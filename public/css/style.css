@@ -1,10 +1,31 @@
 .header {
 	padding: 20px;
 	background-color: #273a40;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
-
+main {
+	padding-top: 110px;
+}
+body {
+	margin-bottom: 60px;
+}
+label {
+	color: #273a40;
+}
 .header h1 {
 	color: #5E7885;
+}
+
+.btn, .btn-primary {
+	background-color: #273a40;
+	border-color: #273a40;
+}
+
+.btn:hover, .btn-primary:hover {
+	background-color: #273a40;
+	border-color: #273a40;
 }
 
 .footer {
@@ -12,12 +33,31 @@
 	bottom: 0;
 	width: 100%;
 	background-color: #ABAEC0;
+	height: 60px;
 	padding: 20px 0;
 }
+.user-detail-form {
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 
+.user-detail-form .form-btn-group {
+	margin-top: 40px;
+}
+
+.user-detail-form .checkbox {
+	display: inline-block;
+	margin-right: 10px;
+}
 .footer p {
 	color: #F2EDF1;
 	margin: 0;
+	margin-left: 232px;
+}
+
+.footer .media-icon {
+	font-size: 25px;
+	margin-left: 15px;
 }
 
 .login-half {
@@ -45,4 +85,72 @@
 	margin-top: 10px;
 	font-style: italic;
 	font-size: 12px;
+}
+.navbar-view {
+	position: fixed;
+	top: 109px;
+	width: 100%;
+	z-index: 1;
+}
+
+.home-main {
+	padding-top: 180px;
+}
+.navbar-view li {
+	background-color: #273A40;
+	color: #5E7885;
+	padding: 8px;
+	margin-right: 5px;
+	cursor: pointer;
+	-webkit-transition: padding-top 0.5s ease;
+}
+
+.navbar-view .logout {
+	color: #5E7885;
+	font-size: 14px;
+	cursor: pointer;
+}
+.navbar-view .logout .fa {
+	margin-right: 5px;
+}
+.navbar-view li:hover, .navbar-view li.active {
+	color: #F2EDF1;
+	padding-top: 30px;
+}
+
+.home-view {
+	margin-top: 30px;
+}
+.home-view .import-social-media {
+	padding-top: 7px;
+	font-size: 25px;
+}
+
+.home-view .import-social-media a {
+	margin-right: 20px;
+}
+
+.home-view .btn-file {
+	color: #F2EDF1;
+	margin-right: 10px;
+}
+.home-view .btn-upload a, .home-view .btn-save-profile a {
+	color: #F2EDF1;
+}
+.login-view .btn-save-profile a{
+	visibility: hidden;
+}
+.home-view .btn-upload a:hover, .home-view .btn-save-profile a:hover {
+	color: #F2EDF1;
+	text-decoration: none;
+}
+.home-view .picture-slot {
+	border: 1px solid #5E7885;
+	width: 150px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+
+.home-view .fa-upload {
+	padding-left: 10px;
 }
