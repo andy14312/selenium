@@ -18,6 +18,18 @@
 			this.$el.find('.web-table').on('click',function webTableHandler(){
 				window.location.pathname="webtable";
 			});
+			this.$el.find('.nav-courses').on('mouseover',function(e){
+				$($(e.currentTarget).find('.courses')[0]).css('left',$(e.currentTarget).width()+16+'px').slideDown(500);
+				//e.stopPropagation();
+			});
+			this.$el.find('.nav-courses').on('mouseleave',function(e){
+				$($(e.currentTarget).find('.courses')[0]).slideUp(500);
+				//e.stopPropagation();
+			});
+			this.$el.find('.course-item').on('click',function(e){
+				window.location.pathname = ""+$(e.currentTarget).text().trim().toLowerCase();
+			});
+			
 		}
 	});
 	(new selenium.NavbarView()).render();

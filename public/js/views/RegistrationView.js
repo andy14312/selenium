@@ -19,11 +19,8 @@
 				e.preventDefault();
 			});
 			this.$el.find('.btn-cancel-profile-edit').on('click',function cancelProfile(){
-				location.reload();
-			});
-			this.$el.find('.btn-back-to-login').on('click',function(){
-				window.location.hash = "/";
-				location.reload();
+				window.location.pathname = "/";
+				//location.reload();
 			});
 		}
 	});

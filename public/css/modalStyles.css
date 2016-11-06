@@ -62,5 +62,5 @@ a.close:hover {
 }
 
 @media (min-width: 32em) {
-  .modal-box { width: 70%; }
+  .modal-box { width: 36%; }
 }

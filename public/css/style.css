@@ -102,8 +102,9 @@ label {
 	padding: 8px;
 	margin-right: 5px;
 	cursor: pointer;
-	-webkit-transition: padding-top 0.5s ease;
+	
 }
+
 
 .navbar-view .logout {
 	color: #5E7885;
@@ -115,8 +116,8 @@ label {
 }
 .navbar-view li:hover, .navbar-view li.active {
 	color: #F2EDF1;
-	padding-top: 30px;
 }
+
 
 .home-view {
 	margin-top: 30px;
@@ -153,4 +154,26 @@ label {
 
 .home-view .fa-upload {
 	padding-left: 10px;
+}
+
+.nav-courses .courses{
+	position: absolute;
+	z-index: 2;
+	list-style-type: none;
+	top: 0;
+	display:none;
+	left: 0;
+	padding-left: 0;
+}
+
+.logged-out-view {
+	margin-top: 15%;
+}
+.logged-out-view h3 {
+	margin-bottom: 25px;
+}
+
+iframe {
+	width: 100%;
+	height: 560px;
 }
